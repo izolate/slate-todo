@@ -1,0 +1,118 @@
+/****************************\
+ * Variables
+\****************************/
+
+:root {
+  --color-blue: #2A31C6;
+  --color-light-blue: #AAADE8;
+  --color-dark-blue: #1C23B5;
+
+  --box-height: 75px;
+  --border: 2px solid #000;
+  --border-radius: 8px;
+
+  --font-family: 'HK Grotesk', sans-serif;
+  --font-size: 175%;
+  --font-color: #FFFFFF;
+}
+
+
+
+
+/****************************\
+ * General
+\****************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size);
+  color: var(--font-color);
+  background-color: var(--color-blue);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 40%;
+}
+
+
+
+
+/****************************\
+ * Elements
+\****************************/
+
+.input {
+  display: block;
+  width: 100%;
+  height: var(--box-height);
+  padding: 0 1em;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.btn {
+  display: block;
+  height: var(--box-height);
+  padding: 0 2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font: inherit;
+  font-weight: 900;
+  color: inherit;
+}
+.btn-small {
+  height: calc(var(--box-height) * 0.5);
+  font-size: 0.75rem;
+}
+
+
+
+/****************************\
+ * Todo
+\****************************/
+
+#todo {
+  position: relative;
+  border-left: var(--border);
+  padding: 1em;
+}
+
+.todo-item {
+  min-height: var(--box-height);
+  margin-bottom: 1em;
+}
+.todo-item input {
+  font-size: 2rem;
+}
+.todo-item .actions {
+  display: flex;
+}
+
+#create-todo {
+  display: flex;
+  max-width: 600px;
+  margin: 2em;
+  background-color: var(--color-dark-blue);
+  margin: 2em;
+  border-radius: var(--border-radius);
+}
+

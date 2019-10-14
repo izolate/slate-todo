@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-bolditalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-italic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-italic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-lightitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_groteskregular_legacy';
+    src: url('../fonts/hkgrotesk-regularlegacy-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-regularlegacy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/hkgrotesk-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-semibolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}

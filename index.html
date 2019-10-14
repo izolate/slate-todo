@@ -3,34 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Slate - Daily To-Do List</title>
-    <!--<link rel="stylesheet" href="lib/css/reset.css">-->
-    <link href="/lib/vendor/basscss.min.css" rel="stylesheet">
-    <style>
-      body {
-        font-family: sans-serif;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-      }
-      body,
-      #app {
-        width: 100vw;
-        height: 100vh;
-      }
-    </style>
+    <link rel="stylesheet" href="/lib/assets/css/fonts.css">
+    <link rel="stylesheet" href="/lib/assets/css/index.css">
   </head>
   <body>
-    <div id="todo">
-      <todo-list
-        v-bind:todos="todos"
-        v-on:delete-todo="deleteTodo"
-        v-on:update-todo="updateTodo"
-        v-on:toggle-done="toggleDone"
-      >
-      </todo-list>
-      <create-todo
-        v-on:add-todo="addTodo"
-      ></create-todo>
-    </div>
+    <main id="app">
+      <div id="left">
+        <create-todo
+          v-on:add-todo="addTodo"
+        ></create-todo>
+      </div>
+      <div id="todo">
+        <todo-list
+          v-bind:todos="todos"
+          v-on:delete-todo="deleteTodo"
+          v-on:update-todo="updateTodo"
+          v-on:toggle-done="toggleDone"
+        >
+        </todo-list>
+      </div>
+    </main>
     <script src="lib/index.js" type="module"></script>
   </body>
 </html>
