@@ -3,9 +3,9 @@
 \****************************/
 
 :root {
-  --color-blue: #2A31C6;
-  --color-light-blue: #AAADE8;
-  --color-dark-blue: #1C23B5;
+  --color-normal: #000000;
+  --color-light: #AAAAAA;
+  --color-dark: #111111;
 
   --box-height: 75px;
   --border-radius: 8px;
@@ -16,7 +16,44 @@
   --font-color: #FFFFFF;
 }
 
+/* Blue */
+.blue {
+  --color-normal: #2A31C6;
+  --color-light: #AAADE8;
+  --color-dark: #1C23B5;
+}
 
+/* Green */
+.green {
+  --color-normal: #6EB957;
+  --color-light: #ABDF9B;
+  --color-dark: #599B44;
+  --font-color: #FFFFFF;
+}
+
+/* Purple */
+.purple {
+  --color-normal: #6F41CC;
+  --color-light: #BAABE9;
+  --color-dark: #7E55D1;
+  --font-color: #FFFFFF;
+}
+
+/* Red */
+.red {
+  --color-normal: #BD4436;
+  --color-light: #E1887D;
+  --color-dark: #AE3022;
+  --font-color: #FFFFFF;
+}
+
+/* Yellow */
+.yellow {
+  --color-normal: #F9DB62;
+  --color-light: #998122;
+  --color-dark: #D0BD5F;
+  --font-color: #252323;
+}
 
 
 
@@ -40,7 +77,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: var(--font-size);
   color: var(--font-color);
-  background-color: var(--color-blue);
+  background-color: var(--color-normal);
   line-height: var(--line-height);
 }
 
@@ -108,7 +145,7 @@ h1 {
 }
 
 .subtitle {
-  color: var(--color-light-blue);
+  color: var(--color-light);
 }
 
 
@@ -135,7 +172,7 @@ h1 {
   margin-top: 2em;
   width: 100%;
   max-width: 500px;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-dark);
   border-radius: var(--border-radius);
 }
 
@@ -143,7 +180,7 @@ h1 {
   padding-right: 0;
 }
 #create-todo input::placeholder {
-  color: var(--color-light-blue);
+  color: var(--color-light);
 }
 
 #create-todo button {
@@ -156,7 +193,7 @@ h1 {
   width: 3px;
   height: 50%;
   content: '';
-  background-color: var(--color-light-blue);
+  background-color: var(--color-light);
   opacity: 0.25;
 }
 
