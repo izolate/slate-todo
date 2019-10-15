@@ -164,16 +164,21 @@ h1 {
 
 
 /****************************\
- * Todo
+ * Todo Item
 \****************************/
 
 .todo-item {
   min-height: var(--box-height);
   margin-bottom: 1em;
 }
+.todo-item.is-done {
+  opacity: 0.25;
+}
+
 .todo-item input {
   font-size: 2rem;
 }
+
 .todo-item .actions {
   display: flex;
 }
