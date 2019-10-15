@@ -9,9 +9,10 @@
 
   --box-height: 75px;
   --border-radius: 8px;
+  --line-height: calc(4 / 3);
 
   --font-family: 'HK Grotesk', sans-serif;
-  --font-size: 175%;
+  --font-size: 150%;
   --font-color: #FFFFFF;
 }
 
@@ -40,6 +41,11 @@ body {
   font-size: var(--font-size);
   color: var(--font-color);
   background-color: var(--color-blue);
+  line-height: var(--line-height);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 2);
 }
 
 #app {
