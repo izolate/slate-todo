@@ -1,31 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Slate - Daily To-Do List</title>
-    <link rel="stylesheet" href="/lib/assets/css/fonts.css">
-    <link rel="stylesheet" href="/lib/assets/css/index.css">
+    <link rel="stylesheet" href="/lib/assets/css/fonts.css" />
+    <link rel="stylesheet" href="/lib/assets/css/index.css" />
   </head>
   <body>
     <main id="app">
-      <div id="dashboard" class="left-column">
-        <h1>Today is {{ day }}.</h1>
-        <p class="subtitle">Write down your most important tasks to prioritise your day, and stay productive.</p>
-        <create-todo
-          v-on:add-todo="addTodo"
-        ></create-todo>
-      </div>
-      <div class="right-column">
-        <todo-list
-          v-bind:todos="todos"
-          v-on:delete-todo="deleteTodo"
-          v-on:update-todo="updateTodo"
-          v-on:toggle-done="toggleDone"
-        >
-        </todo-list>
-      </div>
+      <transition name="fade">
+        <div id="dashboard" class="left-column" v-if="loaded">
+          <h1>Today is {{ day }}.</h1>
+          <p class="subtitle">
+            Write down your most important tasks to prioritise your day, and
+            stay productive.
+          </p>
+          <create-todo v-on:add-todo="addTodo"></create-todo>
+        </div>
+      </transition>
+      <transition name="fade">
+        <div class="right-column" v-if="loaded">
+          <todo-list
+            v-bind:todos="todos"
+            v-on:delete-todo="deleteTodo"
+            v-on:update-todo="updateTodo"
+            v-on:toggle-done="toggleDone"
+          >
+          </todo-list>
+        </div>
+      </transition>
     </main>
     <script src="lib/index.js" type="module"></script>
   </body>
 </html>
-

@@ -3,9 +3,9 @@
 \****************************/
 
 :root {
-  --color-normal: #000000;
-  --color-light: #AAAAAA;
-  --color-dark: #111111;
+  --color-normal: transparent;
+  --color-light: transparent;
+  --color-dark: transparent;
 
   --box-height: 75px;
   --border-radius: 8px;
@@ -14,6 +14,13 @@
   --font-family: 'HK Grotesk', sans-serif;
   --font-size: 150%;
   --font-color: #FFFFFF;
+}
+
+/* Black */
+.black {
+  --color-normal: #000000;
+  --color-light: #AAAAAA;
+  --color-dark: #111111;
 }
 
 /* Blue */
@@ -54,6 +61,23 @@
   --color-dark: #D9BB00;
   --font-color: #252323;
 }
+
+
+
+
+/****************************\
+ * Transitions
+\****************************/
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
 
 
 
@@ -107,6 +131,10 @@ h1 {
   overflow-y: scroll;
 }
 
+.left-column.invisible,
+.right-column.invisible {
+  opacity: 0;
+}
 
 
 
@@ -219,5 +247,3 @@ h1 {
 .todo-item .actions {
   display: flex;
 }
-
-
