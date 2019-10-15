@@ -8,12 +8,12 @@
   </head>
   <body>
     <main id="app">
-      <div id="left">
+      <div class="left-column">
         <create-todo
           v-on:add-todo="addTodo"
         ></create-todo>
       </div>
-      <div id="todo">
+      <div class="right-column">
         <todo-list
           v-bind:todos="todos"
           v-on:delete-todo="deleteTodo"

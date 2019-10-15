@@ -8,7 +8,6 @@
   --color-dark-blue: #1C23B5;
 
   --box-height: 75px;
-  --border: 2px solid #000;
   --border-radius: 8px;
 
   --font-family: 'HK Grotesk', sans-serif;
@@ -19,8 +18,9 @@
 
 
 
+
 /****************************\
- * General
+ * General / Layout
 \****************************/
 
 * {
@@ -47,7 +47,23 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: auto 40%;
+  overflow: hidden;
 }
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.right-column {
+  position: relative;
+  padding: 1em;
+  overflow-y: scroll;
+}
+
 
 
 
@@ -77,6 +93,7 @@ body {
   background-color: transparent;
   font: inherit;
   font-weight: 900;
+  font-size: 1.3rem;
   color: inherit;
 }
 .btn-small {
@@ -86,15 +103,10 @@ body {
 
 
 
+
 /****************************\
  * Todo
 \****************************/
-
-#todo {
-  position: relative;
-  border-left: var(--border);
-  padding: 1em;
-}
 
 .todo-item {
   min-height: var(--box-height);
@@ -110,9 +122,10 @@ body {
 #create-todo {
   display: flex;
   max-width: 600px;
-  margin: 2em;
   background-color: var(--color-dark-blue);
-  margin: 2em;
   border-radius: var(--border-radius);
+}
+#create-todo input {
+  padding-right: 0;
 }
 
