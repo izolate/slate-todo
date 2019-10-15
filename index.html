@@ -8,8 +8,9 @@
   </head>
   <body>
     <main id="app">
-      <div class="left-column">
+      <div id="dashboard" class="left-column">
         <h1>Today is {{ day }}.</h1>
+        <p class="subtitle">Write down your most important tasks to prioritise your day, and stay productive.</p>
         <create-todo
           v-on:add-todo="addTodo"
         ></create-todo>

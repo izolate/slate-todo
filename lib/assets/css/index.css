@@ -9,7 +9,7 @@
 
   --box-height: 75px;
   --border-radius: 8px;
-  --line-height: calc(4 / 3);
+  --line-height: calc(3 / 2);
 
   --font-family: 'HK Grotesk', sans-serif;
   --font-size: 150%;
@@ -107,6 +107,59 @@ h1 {
   font-size: 0.75rem;
 }
 
+.subtitle {
+  color: var(--color-light-blue);
+}
+
+
+
+
+/****************************\
+ * Dashboard
+\****************************/
+
+#dashboard .subtitle {
+  max-width: 500px;
+  text-align: center;
+}
+
+
+
+
+/****************************\
+ * Create Todo
+\****************************/
+
+#create-todo {
+  display: flex;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-dark-blue);
+  border-radius: var(--border-radius);
+}
+
+#create-todo input {
+  padding-right: 0;
+}
+#create-todo input::placeholder {
+  color: var(--color-light-blue);
+}
+
+#create-todo button {
+  position: relative;
+}
+#create-todo button::before {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 3px;
+  height: 50%;
+  content: '';
+  background-color: var(--color-light-blue);
+  opacity: 0.25;
+}
+
 
 
 
@@ -125,13 +178,4 @@ h1 {
   display: flex;
 }
 
-#create-todo {
-  display: flex;
-  max-width: 600px;
-  background-color: var(--color-dark-blue);
-  border-radius: var(--border-radius);
-}
-#create-todo input {
-  padding-right: 0;
-}
 
