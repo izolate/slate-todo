@@ -7,12 +7,12 @@
   --color-light: transparent;
   --color-dark: transparent;
 
-  --box-height: 75px;
-  --border-radius: 8px;
+  --box-height: 65px;
+  --border-radius: 6px;
   --line-height: calc(3 / 2);
 
   --font-family: 'HK Grotesk', sans-serif;
-  --font-size: 150%;
+  --font-size: 135%;
   --font-color: #FFFFFF;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 h1 {
-  font-size: calc(var(--font-size) * 2);
+  font-size: 3.3em;
   line-height: calc(var(--line-height) / 1.5);
 }
 
@@ -116,6 +116,12 @@ h1 {
   display: grid;
   grid-template-columns: auto 40%;
   overflow: hidden;
+}
+@media (max-width: 1000px) {
+  #app {
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+  }
 }
 
 .left-column {
@@ -130,6 +136,12 @@ h1 {
   position: relative;
   padding: 1em;
   overflow-y: scroll;
+}
+@media (max-width: 1000px) {
+  .right-column {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
 }
 
 .left-column.invisible,
@@ -165,7 +177,7 @@ h1 {
   background-color: transparent;
   font: inherit;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: inherit;
 }
 .btn-small {
@@ -175,6 +187,7 @@ h1 {
 
 .subtitle {
   color: var(--color-light);
+  font-size: 1.2em;
 }
 
 
@@ -183,6 +196,10 @@ h1 {
 /****************************\
  * Dashboard
 \****************************/
+
+#dashboard {
+  text-align: center;
+}
 
 #dashboard .subtitle {
   max-width: 500px;
@@ -201,7 +218,7 @@ h1 {
   display: flex;
   margin-top: 2em;
   width: 100%;
-  max-width: 500px;
+  max-width: 475px;
   background-color: var(--color-dark);
   border-radius: var(--border-radius);
 }
