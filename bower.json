@@ -1,0 +1,26 @@
+{
+  "name": "slate",
+  "homepage": "https://github.com/izolate/slate-todo",
+  "authors": [
+    "izolate <izolate@gmail.com>"
+  ],
+  "description": "Daily to-do list for the browser new tab page",
+  "main": "index.html",
+  "keywords": [
+    "todo",
+    "todo",
+    "list",
+    "to-do",
+    "productivity",
+    "browser"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

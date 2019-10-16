@@ -1,0 +1,15 @@
+{
+  "name": "idb-keyval",
+  "homepage": "https://github.com/jakearchibald/idb-keyval",
+  "version": "3.2.0",
+  "_release": "3.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.2.0",
+    "commit": "ab58f0eb031ce23ea192f27c43aa6e29554b49a8"
+  },
+  "_source": "https://github.com/jakearchibald/idb-keyval.git",
+  "_target": "^3.2.0",
+  "_originalSource": "idb-keyval",
+  "_direct": true
+}
